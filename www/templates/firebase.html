@@ -1,0 +1,26 @@
+<ion-view title="Fire Pics">
+    <ion-content>
+        <div>
+            <form ng-submit="login(username, password)">
+                <div class="list list-inset">
+                    <label class="item item-input">
+                         <i class="icon ion-person placeholder-icon"></i>
+                        <input ng-model="username" type="text" placeholder="Username" />
+                    </label>
+                    <label class="item item-input">
+                     <i class="icon ion-locked placeholder-icon"></i>
+                        <input ng-model="password" type="password" placeholder="Password" />
+                    </label>
+                </div>
+                <div class="padding-left padding-right">
+                    <div class="button-bar">
+                        <button class="button button-block button-positive" ng-click="login(username, password)" type="submit">
+                        Login
+                        </button>
+                        <!-- <a class="button" ng-click="register(username, password)">Register</a> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>
